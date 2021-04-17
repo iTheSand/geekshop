@@ -84,7 +84,7 @@ def edit(request):
 def send_verify_email(user):
     verify_link = reverse('auth:verify', args=[user.email, user.activation_key])
 
-    subject = f'Подтверждение учетной записи {user.email}'
+    subject = f'Подтверждение учетной записи от {settings.EMAIL_HOST_USER.split("@")[0]}'
 
     massage = f'Ссылка для активации: {settings.BASE_URL}{verify_link}'
 

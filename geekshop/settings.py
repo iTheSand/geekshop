@@ -143,20 +143,27 @@ AUTH_USER_MODEL = 'authapp.ShopUser'
 
 LOGIN_URL = '/auth/login/'
 
-BASE_URL = 'http://127.0.0.1:8000'
+BASE_URL = 'http://178.21.11.192:80'
 
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'django@gb.local'
-EMAIL_HOST_PASSWORD = 'geekshop'
-EMAIL_USE_SSL = False
+
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'admgeekshop@yandex.ru'
+EMAIL_HOST_PASSWORD = 'ycydsmresqanciof'
+EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = True
+
+SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # python
 # EMAIL_HOST_USER = None
 # EMAIL_HOST_PASSWORD = None
 
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = 'tmp/email-messages/'
+# EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
+
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = 'tmp/email-messages/'
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
