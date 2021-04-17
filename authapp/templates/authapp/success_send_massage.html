@@ -1,0 +1,13 @@
+{% extends 'authapp/base.html' %}
+
+{% block content %}
+        <h3>Успешная регистрация!</h3>
+        <p>Письмо с кодом подтверждения отправлено на почту!</p>
+        <p>Подтвердите регистрацию и зайдите на сайт!</p>
+    <button class="btn btn-link form-control">
+        <a href="{% url 'auth:login' %}">войти на сайт</a>
+    </button>
+    <button class="btn btn-link form-control">
+        <a href="{% url 'main' %}">на главную</a>
+    </button>
+{% endblock %}
