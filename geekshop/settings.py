@@ -145,7 +145,6 @@ LOGIN_URL = '/auth/login/'
 
 BASE_URL = 'http://178.21.11.192:80'
 
-
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'admgeekshop@yandex.ru'
@@ -195,3 +194,5 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
 )
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
