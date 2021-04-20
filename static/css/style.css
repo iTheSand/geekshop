@@ -892,10 +892,13 @@ html, body {
 	text-decoration: none;
 }
 .explore:hover {
+    color: #6c6c6c;
 	border-bottom: 3px solid #212121;
+    text-decoration: none;
 }
 .explore:active {
 	color: #6c6c6c;
+    text-decoration: none;
 	border-bottom: 3px solid #6c6c6c;
 }
 
@@ -1635,9 +1638,13 @@ td:first-child {
 	margin-top: 31px;
 }
 .red-button:hover {
+    color: #6c6c6c;
+    text-decoration: none;
 	box-shadow: none;
 }
 .red-button:active {
+    color: #6c6c6c;
+    text-decoration: none;
 	box-shadow: none;
 	background-color: #d41306;
 }

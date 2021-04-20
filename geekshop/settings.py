@@ -24,8 +24,9 @@ SECRET_KEY = 'q3slw^r37trmr_=0cnyg@-ouz0p9$onz*(&63!s7&96$tj=$^b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = False
+# ALLOWED_HOSTS = []
 
+DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 # Application definition
@@ -146,11 +147,11 @@ LOGIN_URL = '/auth/login/'
 BASE_URL = 'http://178.21.11.192:80'
 
 EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_PORT = 587
+EMAIL_PORT = 465
 EMAIL_HOST_USER = 'admgeekshop@yandex.ru'
 EMAIL_HOST_PASSWORD = 'ycydsmresqanciof'
-EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = True
+EMAIL_USE_SSL = True
+EMAIL_USE_TLS = False
 
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
