@@ -54,9 +54,9 @@ def basket_add(request, pk):
 #     def form_valid(self, form):
 #         return HttpResponseRedirect(self.request.META.get('HTTP_REFERER'))
 #
-#     @method_decorator(login_required)
+#     @method_decorator(login_required())
 #     def dispatch(self, request, *args, **kwargs):
-#         return super().dispatch(request, *args, **kwargs)
+#         return super(UpdateView, self).dispatch(request, *args, **kwargs)
 
 
 @login_required
