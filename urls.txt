@@ -1,5 +1,2 @@
-http://178.21.11.192/
-http://178.21.11.192/products/
-http://178.21.11.192/contact/
-http://178.21.11.192/products/category/3/
-http://178.21.11.192/products/category/4/
+http://178.21.11.192/auth/login/ POST username=django&password=geekbrains
+http://178.21.11.192/basket/
