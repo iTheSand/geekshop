@@ -9,11 +9,11 @@ class OrderForm(forms.ModelForm):
         model = Order
         exclude = ('user',)
 
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, **kwargs)
-            for field_name, field in self.fields.items():
-                field.widget.attrs['class'] = 'form-control'
-                field.help_text = ''
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'form-control'
+            field.help_text = ''
 
 
 class OrderItemForm(forms.ModelForm):
@@ -23,10 +23,10 @@ class OrderItemForm(forms.ModelForm):
         model = OrderItem
         exclude = ()
 
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, **kwargs)
-            for field_name, field in self.fields.items():
-                field.widget.attrs['class'] = 'form-control'
-                field.help_text = ''
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'form-control'
+            field.help_text = ''
 
-            self.fields['product'].queryset = Product.get_items().select_related()
+        self.fields['product'].queryset = Product.get_items().select_related()
