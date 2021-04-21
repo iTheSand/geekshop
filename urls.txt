@@ -1,1 +1,1 @@
-http://178.21.11.192/order/update/2/
+http://178.21.11.192/order/read/2/
