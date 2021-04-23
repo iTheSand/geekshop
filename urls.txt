@@ -1,7 +1,3 @@
-http://178.21.11.192/
-http://178.21.11.192/products/
-http://178.21.11.192/contact/
-http://178.21.11.192/products/category/1/
-http://178.21.11.192/products/category/2/
-http://178.21.11.192/products/category/3/
-http://178.21.11.192/products/category/4/
+http://178.21.11.192/order/update/2/
+http://178.21.11.192/order/update/6/
+http://178.21.11.192/order/update/7/
